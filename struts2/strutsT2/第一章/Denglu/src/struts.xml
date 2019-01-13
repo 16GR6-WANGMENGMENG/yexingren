@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="HelloDemo" extends="struts-default">
+<action name="HelloDenglu" class="HelloAction.helloAction">
+<result name="error">ShiBai.jsp</result>
+<result name="none">DengLu.jsp</result>
+<result name="success">ChengGong.jsp</result>
+</action>
+
+
+</package>
+</struts>    
