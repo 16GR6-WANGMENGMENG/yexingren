@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="usermanager"  extends="struts-default">
+<interceptors>
+  <interceptor name="myinterceptor" class="com.qhit.MyInterceptor"></interceptor>
+</interceptors>
+<action name="helloworld" class="com.qhit.HelloWordAction">
+
+<!-- interceptor-ref name="myinterceptor" /-->
+<!-- interceptor-ref name="timer"></interceptor-ref-->
+<result  name="success">/succss.jsp</result>
+</action>
+
+<action name="hello" class="com.qhit.HelloAction">
+<!--interceptor-ref name="myinterceptor" / -->
+<!--  interceptor-ref name="defaultStark" /-->
+<result  name="success">/succss.jsp</result>
+</action>
+
+
+<!-- 留着 -->
+<action name="hello1" class="com.qhit.test.TestClass">
+
+<result  name="success">/succss.jsp</result>
+</action>
+
+
+</package>
+
+
+
+</struts>    
