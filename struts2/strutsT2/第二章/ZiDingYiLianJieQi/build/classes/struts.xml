@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="demo" extends="struts-default">	
+<interceptors>
+<interceptor name="Zidingyi" class="strue.LinJieQi"></interceptor>
+</interceptors>	
+			<action name="helloaction" class="strue.HelloAction">
+			<interceptor-ref name="Zidingyi"></interceptor-ref>
+				<result name="success">/success.jsp</result>
+			</action>
+		</package>
+</struts>    
